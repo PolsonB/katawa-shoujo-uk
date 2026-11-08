@@ -1,0 +1,37 @@
+name: Пропозиція перекладу
+description: Запропонувати інший варіант перекладу рядка
+title: "[Переклад]: "
+labels: [переклад]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: Файл або сцена
+      placeholder: script-a2-emi_UK.rpy
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Англійський оригінал
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Поточний переклад
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Запропонований переклад
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Пояснення
+      description: Контекст сцени, тон персонажа або причина пропозиції.
+    validations:
+      required: true

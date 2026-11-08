@@ -1,0 +1,32 @@
+name: Описка або помилка в тексті
+description: Повідомити про помилку в українській локалізації
+title: "[Описка]: "
+labels: [текст]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: Файл або сцена
+      description: Вкажіть назву файла, сцену чи приблизний номер рядка.
+      placeholder: script-a1-tuesday_UK.rpy, рядок 1504
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Поточний текст
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Запропоноване виправлення
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Контекст
+      description: За можливості додайте англійський оригінал або поясніть проблему.
+    validations:
+      required: false
